@@ -1,0 +1,40 @@
+<!-- item_position.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTenChucVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên chức vụ: "
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/edt_TenChucVu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/txtTenChucVu" />
+        <!--       <TextView
+                   android:id="@+id/txtPhuCap"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/txtTenChucVu"
+                   android:layout_marginTop="20dp"
+                   android:text="Phụ cấp: "
+                   android:textStyle="italic" />
+               <TextView
+                   android:id="@+id/edt_PhuCap"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/txtPhuCap"
+                   android:layout_below="@+id/edt_TenChucVu"
+                   android:layout_marginTop="20dp"/>-->
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:text="Quản lý ca làm việc"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#016A70" />
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên ca làm việc:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_TenLamViec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên ca làm việc"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giờ bắt đầu:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/TP_GioBatDau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn thời gian"
+
+        android:layout_marginBottom="16dp"
+        android:onClick="popTimePicker"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giờ kết thúc:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/TP_GioKetThuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn thời gian"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_ThemCaLamViec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greend"
+        android:text="Thêm ca làm việc" />
+</LinearLayout>

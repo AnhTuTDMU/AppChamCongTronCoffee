@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "72620863266",
+    "project_id": "app-chamcongnhanvien-16dcb",
+    "storage_bucket": "app-chamcongnhanvien-16dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72620863266:android:028b1a5b90e797a3743f7b",
+        "android_client_info": {
+          "package_name": "com.example.nghiencuukhoahoc_appchamcong"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCowkKaag1XUfimjwl0JpRBzFfyNuDEGnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

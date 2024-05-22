@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Trang chủ"
+            android:icon="@drawable/baseline_home_24"/>
+        <item android:id="@+id/nav_user"
+            android:title="Thông tin cá nhân"
+            android:icon="@drawable/baseline_account_box_24"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Thông tin làm việc">
+            <menu>
+                <item android:id="@+id/nav_history_timekeeping"
+                    android:title="Lịch sử ca làm"
+                    android:icon="@drawable/baseline_account_box_24"/>
+            </menu>
+        </item>
+    </group>
+    <item android:id="@+id/nav_Logout"
+        android:title="Đăng xuất"
+        android:icon="@drawable/logout"/>
+</menu>

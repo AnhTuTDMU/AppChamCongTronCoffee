@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/txt_ChucVu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:text="QUẢN LÝ NHÂN VIÊN"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#016A70"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_ChonAnh"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:src="@drawable/icons8user64"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/btn_ChonAnh"
+            android:layout_width="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_ChonAnh"
+            android:text="Chọn ảnh " />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/edtTenNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_account_box_24"
+        android:drawablePadding="10dp"
+        android:hint="Tên nhân viên"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="Tài khoản"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edtNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày sinh (DD/MM/YYYY)"
+        android:drawableLeft="@drawable/baseline_date_range_24"
+        android:drawablePadding="10dp"
+        android:inputType="date" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/radioNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtSoDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:drawableLeft="@drawable/baseline_local_phone_24"
+        android:drawablePadding="10dp"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtLuongCoBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lương cơ bản"
+        android:drawableLeft="@drawable/baseline_attach_money_24"
+        android:drawablePadding="10dp"
+        android:inputType="numberDecimal" />
+    <Spinner
+        android:id="@+id/sp_MaChucVu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_LuuNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lưu thông tin nhân viên" />
+</LinearLayout>

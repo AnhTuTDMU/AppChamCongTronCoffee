@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/item_timekeeping"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <TextView
+        android:id="@+id/txtTenNhanVienChamcong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Nhân Viên: "
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txt_TenNhanVienChamcong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Nhân Viên: "
+        android:layout_toRightOf="@+id/txtTenNhanVienChamcong"
+        android:paddingLeft="40dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày: "
+        android:layout_below="@+id/txt_TenNhanVienChamcong"
+        android:drawableLeft="@drawable/baseline_date_range_24"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txt_Ngay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày: "
+        android:layout_below="@+id/txt_TenNhanVienChamcong"
+        android:layout_toRightOf="@+id/txtNgay"
+        android:paddingLeft="110dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtGioVao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Ngay"
+        android:text="Giờ Vào: "
+        android:drawableLeft="@drawable/baseline_access_time_24"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txt_GioVao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giờ Vào: "
+        android:layout_below="@+id/txt_Ngay"
+        android:layout_toRightOf="@+id/txtGioVao"
+        android:paddingLeft="90dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtGioRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_GioVao"
+        android:text="Giờ Ra: "
+        android:drawableLeft="@drawable/baseline_alarm_on_24"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txt_GioRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giờ Ra: "
+        android:layout_below="@+id/txt_GioVao"
+        android:layout_toRightOf="@+id/txtGioRa"
+        android:paddingLeft="100dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtTenCaLamViecChamCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_GioRa"
+        android:text="Ca Làm Việc: "
+        android:drawableLeft="@drawable/baseline_favorite_24"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txt_TenCaLamViecChamCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Ca Làm Việc: "
+        android:layout_below="@+id/txt_GioRa"
+        android:layout_toRightOf="@+id/txtTenCaLamViecChamCong"
+        android:paddingLeft="55dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtTongGioLamViec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTenCaLamViecChamCong"
+        android:text="Tổng giờ làm việc: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txt_TongGioLamViec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/txt_TenCaLamViecChamCong"
+        android:layout_toRightOf="@+id/txtTongGioLamViec"
+        android:paddingLeft="55dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+</RelativeLayout>

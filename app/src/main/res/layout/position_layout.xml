@@ -1,0 +1,60 @@
+<!-- res/layout/activity_create_chucvu.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PositionActivity">
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/txt_ChucVu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:text="Chức Vụ"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#016A70"/>
+        <EditText
+            android:id="@+id/edtTenChucVu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên chức vụ"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/txt_ChucVu"/>
+
+
+        <Button
+            android:id="@+id/btn_Luu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTenChucVu"
+            android:layout_marginTop="18dp"
+            android:text="Lưu" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/txt_ThongTinChucVu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách chức vụ"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/RelativeLayout_1"
+        android:background="#213555"
+        android:textColor="#fefefe"/>
+    <ListView
+        android:id="@+id/lv_ThongTinChucVu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_ThongTinChucVu"/>
+</RelativeLayout>

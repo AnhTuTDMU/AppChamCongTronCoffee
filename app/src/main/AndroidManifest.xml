@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NghienCuuKhoaHoc_AppChamCong"
+        tools:targetApi="31">
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VerifyOTP"></activity>
+        <activity android:name=".UserActivity"></activity>
+        <activity android:name=".HomeUserActivity"></activity>
+        <activity android:name=".ForgotPassword"></activity>
+        <activity android:name=".HomeAdminActivity"></activity>
+        <activity android:name=".PositionActivity"></activity>
+        <activity android:name=".ListUserActivity"></activity>
+        <activity android:name="ShiftActivity"></activity>
+        <activity android:name=".ListShiftActivity"></activity>
+        <activity android:name=".UpdateShiftActivity"></activity>
+        <activity android:name=".UpdateUserActivity"></activity>
+        <activity android:name=".EmploymentConfirmationActivity"></activity>
+        <activity android:name=".WorkHistoryActivity"></activity>
+        <activity android:name=".WorkHistoryAdminActivity"></activity>
+        <activity android:name=".SalaryActivity"></activity>
+        <activity android:name=".QRCodeReaderActivity"></activity>
+        <activity android:name=".QRCodeGenerationActivity"></activity>
+        <activity android:name=".SendMessageActivity"></activity>
+        <activity android:name=".ReceiveMessageActivity"></activity>
+        <activity android:name=".SalaryActivityAdmin"></activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>

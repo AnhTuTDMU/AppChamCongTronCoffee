@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/txt_ChucVu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:text="Thông tin nhân viên"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#016A70"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_ChonAnh"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/btn_ChonAnh"
+            android:layout_width="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_ChonAnh"
+            android:text="Chọn ảnh " />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tài khoản"
+        android:inputType="text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:paddingRight="40dp" /> <!-- Để để chỗ cho hình ảnh -->
+
+        <ImageButton
+            android:id="@+id/btnShowPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_remove_red_eye_24"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày sinh (DD/MM/YYYY)"
+        android:inputType="date" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/radioNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtSoDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+    <Button
+        android:id="@+id/btn_Sua"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu thay đổi" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/logo_tron_preview" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:ems="15"
+            android:hint="Email:"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtMatKhau"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:ems="15"
+                android:hint="Mật khẩu: "
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"/>
+
+            <ImageButton
+                android:id="@+id/btnShowPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_remove_red_eye_24"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="30dp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_Quenmatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginBottom="10dp"
+            android:text="Quên mật khẩu"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_DangNhap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#04364A"
+            android:textSize="18dp"
+            android:text="Đăng nhập" />
+
+    </LinearLayout>
+</RelativeLayout>
